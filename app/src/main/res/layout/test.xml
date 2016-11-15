@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:orientation="vertical"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <TextView
+        android:text="USERNAME:"
+        android:layout_height="29dp"
+        android:id="@+id/textView"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:width="1dp"
+        android:layout_width="85dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        tools:layout_editor_absoluteY="23dp"
+        tools:layout_editor_absoluteX="133dp"
+        android:id="@+id/editText"/>
+
+    <TextView
+        android:text="PASSWORD:"
+        android:layout_width="85dp"
+        android:id="@+id/textView2"
+        app:layout_constraintLeft_toLeftOf="@+id/textView"
+        android:layout_height="29dp"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText2"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        tools:layout_editor_absoluteY="82dp"
+        android:id="@+id/editText2"
+        app:layout_constraintLeft_toLeftOf="@+id/editText"/>
+
+    <Button
+        android:text="LOGIN"
+        android:layout_width="150dp"
+        android:layout_height="57dp"
+        tools:layout_editor_absoluteY="181dp"
+        android:id="@+id/button"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:text="CLEAR"
+        android:layout_width="150dp"
+        android:layout_height="57dp"
+        android:id="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/button"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"/>
+</android.support.constraint.ConstraintLayout>
