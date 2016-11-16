@@ -17,7 +17,7 @@ public class LoginActivity extends AppCompatActivity
 
 	private ILoginPresenter loginPresenter;
 
-	private android.widget.EditText name;
+	private android.widget.EditText name;//add test
 	private android.widget.EditText pwd;
 	private android.widget.Button login;
 	private android.widget.Button clean;
